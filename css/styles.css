@@ -185,7 +185,8 @@ h2.hidden {
         letter-spacing: 0.03em;
 }
 
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
         padding: 6px 25px;
 
         color: var(--primary-bg);
@@ -488,7 +489,8 @@ h2.hidden {
         display: block;
 }
 
-.portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
         display: block;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
