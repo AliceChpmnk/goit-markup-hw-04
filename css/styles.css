@@ -16,6 +16,10 @@
         margin: 0;
 }
 
+.link {
+        text-decoration: none;
+}
+
 body {
         font-family: 'Roboto', sans-serif;
 
@@ -364,7 +368,7 @@ h2.hidden {
         gap: 10px;
 }
 
-.social-list-item {
+.social-list-link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -373,7 +377,7 @@ h2.hidden {
         border-radius: 50%;
 }
 
-.social-list-item-team {
+.social-list-link-team {
         background-color: var(--primary-bg);
 }
 
@@ -381,13 +385,13 @@ h2.hidden {
         fill: var(--social-icons);
 }
 
-.social-list-item:hover .social-list-icon,
-.social-list-item:focus .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
         fill: var(--primary-bg);
 }
 
-.social-list-item:hover,
-.social-list-item:focus {
+.social-list-link:hover,
+.social-list-link:focus {
         background-color: var(--accent);
 }
 
@@ -399,12 +403,14 @@ h2.hidden {
         gap: 30px;
 }
 
-.clients-item {
+.clients-link {
+        display: block;
         padding: 16px 32px;
         width: 170px;
         height: 92px;
         border-color: var(--social-icons);
-        border: 1px solid;
+        border-width: 1px;
+        border-style: solid;
         border-radius: 4px;
 }
 
@@ -412,13 +418,13 @@ h2.hidden {
         fill: var(--social-icons);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
         border-color: var(--accent);
 }
 
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
         fill: var(--accent);
 }
 
@@ -431,10 +437,6 @@ h2.hidden {
 
 .buttons .item:not(:last-child) {
         margin-right: 8px;
-}
-
-.portfolio .item:hover {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio {
@@ -484,6 +486,11 @@ h2.hidden {
 
 .portfolio .picture {
         display: block;
+}
+
+.portfolio-link:hover {
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Footer */
@@ -547,7 +554,7 @@ address {
         color: var(--primary-bg);
 }
 
-.social-list-item-dark {
+.social-list-link-dark {
         background-color: rgba(255, 255, 255, 0.1);;
 }
 
